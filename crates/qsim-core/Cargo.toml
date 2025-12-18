@@ -1,0 +1,13 @@
+[package]
+name = "qsim-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Core engine, traits, and state management for qsim"
+
+[dependencies]
+petgraph.workspace = true
+thiserror.workspace = true
+rayon.workspace = true
+
+[dev-dependencies]

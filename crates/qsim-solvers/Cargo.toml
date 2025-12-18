@@ -1,0 +1,13 @@
+[package]
+name = "qsim-solvers"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Power flow solvers (DC, AC) for qsim"
+
+[dependencies]
+qsim-core.workspace = true
+qsim-elements.workspace = true
+nalgebra.workspace = true
+num-complex.workspace = true
+rayon.workspace = true

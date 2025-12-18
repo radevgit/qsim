@@ -1,0 +1,40 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/qsim-core",
+    "crates/qsim-elements",
+    "crates/qsim-solvers",
+    "crates/qsim-io",
+    "qsim",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/zoo/qsim"
+keywords = ["power-grid", "simulation", "power-flow", "electrical"]
+categories = ["simulation", "science"]
+
+[workspace.dependencies]
+# Internal crates
+qsim-core = { path = "crates/qsim-core" }
+qsim-elements = { path = "crates/qsim-elements" }
+qsim-solvers = { path = "crates/qsim-solvers" }
+qsim-io = { path = "crates/qsim-io" }
+
+# External dependencies
+petgraph = "0.6"
+nalgebra = "0.33"
+num-complex = "0.4"
+rayon = "1.10"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "2.0"
+
+# Dev dependencies
+criterion = "0.5"
+
+[profile.release]
+lto = true
+codegen-units = 1

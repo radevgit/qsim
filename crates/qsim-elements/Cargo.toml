@@ -1,0 +1,10 @@
+[package]
+name = "qsim-elements"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Grid elements (Bus, Branch, Generator, Load) for qsim"
+
+[dependencies]
+qsim-core.workspace = true
+serde.workspace = true

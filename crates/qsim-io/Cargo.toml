@@ -1,0 +1,13 @@
+[package]
+name = "qsim-io"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "JSON I/O, serialization, and persistence for qsim"
+
+[dependencies]
+qsim-core.workspace = true
+qsim-elements.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
