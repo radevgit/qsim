@@ -18,10 +18,10 @@ categories = ["simulation", "science"]
 
 [workspace.dependencies]
 # Internal crates
-qsim-core = { path = "crates/qsim-core" }
-qsim-elements = { path = "crates/qsim-elements" }
-qsim-solvers = { path = "crates/qsim-solvers" }
-qsim-io = { path = "crates/qsim-io" }
+qsim-core = { path = "crates/qsim-core", version = "0.1.0" }
+qsim-elements = { path = "crates/qsim-elements", version = "0.1.0" }
+qsim-solvers = { path = "crates/qsim-solvers", version = "0.1.0" }
+qsim-io = { path = "crates/qsim-io", version = "0.1.0" }
 
 # External dependencies
 petgraph = "0.6"
