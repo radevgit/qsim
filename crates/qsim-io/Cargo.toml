@@ -3,6 +3,8 @@ name = "qsim-io"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
+repository.workspace = true
+readme = "../../README.md"
 description = "JSON I/O, serialization, and persistence for qsim"
 
 [dependencies]

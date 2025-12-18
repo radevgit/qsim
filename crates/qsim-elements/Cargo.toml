@@ -3,6 +3,8 @@ name = "qsim-elements"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
+repository.workspace = true
+readme = "../../README.md"
 description = "Grid elements (Bus, Branch, Generator, Load) for qsim"
 
 [dependencies]
