@@ -52,4 +52,4 @@ qsim = "0.1"
 
 ## License
 
-MIT OR Apache-2.0
+MIT
