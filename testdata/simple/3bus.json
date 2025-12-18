@@ -1,0 +1,18 @@
+{
+  "name": "3-bus simple",
+  "description": "Minimal 3-bus test case for basic validation",
+  "baseMVA": 100,
+  "buses": [
+    {"id": 1, "type": "slack", "pd": 0, "qd": 0, "vm": 1.0, "va": 0},
+    {"id": 2, "type": "pv", "pd": 0, "qd": 0, "vm": 1.0, "va": 0},
+    {"id": 3, "type": "pq", "pd": 100, "qd": 30, "vm": 1.0, "va": 0}
+  ],
+  "generators": [
+    {"bus": 1, "pg": 0, "vg": 1.0},
+    {"bus": 2, "pg": 50, "vg": 1.0}
+  ],
+  "branches": [
+    {"from": 1, "to": 2, "r": 0.01, "x": 0.1, "b": 0},
+    {"from": 2, "to": 3, "r": 0.02, "x": 0.15, "b": 0}
+  ]
+}

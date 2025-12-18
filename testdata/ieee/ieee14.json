@@ -1,0 +1,51 @@
+{
+  "name": "IEEE 14-bus",
+  "description": "IEEE 14 Bus Test Case - portion of American Electric Power System (Midwestern US), February 1962",
+  "baseMVA": 100,
+  "buses": [
+    {"id": 1, "type": "slack", "pd": 0, "qd": 0, "gs": 0, "bs": 0, "vm": 1.06, "va": 0, "baseKV": 0},
+    {"id": 2, "type": "pv", "pd": 21.7, "qd": 12.7, "gs": 0, "bs": 0, "vm": 1.045, "va": -4.98, "baseKV": 0},
+    {"id": 3, "type": "pv", "pd": 94.2, "qd": 19, "gs": 0, "bs": 0, "vm": 1.01, "va": -12.72, "baseKV": 0},
+    {"id": 4, "type": "pq", "pd": 47.8, "qd": -3.9, "gs": 0, "bs": 0, "vm": 1.019, "va": -10.33, "baseKV": 0},
+    {"id": 5, "type": "pq", "pd": 7.6, "qd": 1.6, "gs": 0, "bs": 0, "vm": 1.02, "va": -8.78, "baseKV": 0},
+    {"id": 6, "type": "pv", "pd": 11.2, "qd": 7.5, "gs": 0, "bs": 0, "vm": 1.07, "va": -14.22, "baseKV": 0},
+    {"id": 7, "type": "pq", "pd": 0, "qd": 0, "gs": 0, "bs": 0, "vm": 1.062, "va": -13.37, "baseKV": 0},
+    {"id": 8, "type": "pv", "pd": 0, "qd": 0, "gs": 0, "bs": 0, "vm": 1.09, "va": -13.36, "baseKV": 0},
+    {"id": 9, "type": "pq", "pd": 29.5, "qd": 16.6, "gs": 0, "bs": 19, "vm": 1.056, "va": -14.94, "baseKV": 0},
+    {"id": 10, "type": "pq", "pd": 9, "qd": 5.8, "gs": 0, "bs": 0, "vm": 1.051, "va": -15.1, "baseKV": 0},
+    {"id": 11, "type": "pq", "pd": 3.5, "qd": 1.8, "gs": 0, "bs": 0, "vm": 1.057, "va": -14.79, "baseKV": 0},
+    {"id": 12, "type": "pq", "pd": 6.1, "qd": 1.6, "gs": 0, "bs": 0, "vm": 1.055, "va": -15.07, "baseKV": 0},
+    {"id": 13, "type": "pq", "pd": 13.5, "qd": 5.8, "gs": 0, "bs": 0, "vm": 1.05, "va": -15.16, "baseKV": 0},
+    {"id": 14, "type": "pq", "pd": 14.9, "qd": 5, "gs": 0, "bs": 0, "vm": 1.036, "va": -16.04, "baseKV": 0}
+  ],
+  "generators": [
+    {"bus": 1, "pg": 232.4, "qg": -16.9, "qmax": 10, "qmin": 0, "vg": 1.06, "mbase": 100, "pmax": 332.4, "pmin": 0},
+    {"bus": 2, "pg": 40, "qg": 42.4, "qmax": 50, "qmin": -40, "vg": 1.045, "mbase": 100, "pmax": 140, "pmin": 0},
+    {"bus": 3, "pg": 0, "qg": 23.4, "qmax": 40, "qmin": 0, "vg": 1.01, "mbase": 100, "pmax": 100, "pmin": 0},
+    {"bus": 6, "pg": 0, "qg": 12.2, "qmax": 24, "qmin": -6, "vg": 1.07, "mbase": 100, "pmax": 100, "pmin": 0},
+    {"bus": 8, "pg": 0, "qg": 17.4, "qmax": 24, "qmin": -6, "vg": 1.09, "mbase": 100, "pmax": 100, "pmin": 0}
+  ],
+  "branches": [
+    {"from": 1, "to": 2, "r": 0.01938, "x": 0.05917, "b": 0.0528, "rateA": 0, "ratio": 0},
+    {"from": 1, "to": 5, "r": 0.05403, "x": 0.22304, "b": 0.0492, "rateA": 0, "ratio": 0},
+    {"from": 2, "to": 3, "r": 0.04699, "x": 0.19797, "b": 0.0438, "rateA": 0, "ratio": 0},
+    {"from": 2, "to": 4, "r": 0.05811, "x": 0.17632, "b": 0.034, "rateA": 0, "ratio": 0},
+    {"from": 2, "to": 5, "r": 0.05695, "x": 0.17388, "b": 0.0346, "rateA": 0, "ratio": 0},
+    {"from": 3, "to": 4, "r": 0.06701, "x": 0.17103, "b": 0.0128, "rateA": 0, "ratio": 0},
+    {"from": 4, "to": 5, "r": 0.01335, "x": 0.04211, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 4, "to": 7, "r": 0, "x": 0.20912, "b": 0, "rateA": 0, "ratio": 0.978},
+    {"from": 4, "to": 9, "r": 0, "x": 0.55618, "b": 0, "rateA": 0, "ratio": 0.969},
+    {"from": 5, "to": 6, "r": 0, "x": 0.25202, "b": 0, "rateA": 0, "ratio": 0.932},
+    {"from": 6, "to": 11, "r": 0.09498, "x": 0.1989, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 6, "to": 12, "r": 0.12291, "x": 0.25581, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 6, "to": 13, "r": 0.06615, "x": 0.13027, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 7, "to": 8, "r": 0, "x": 0.17615, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 7, "to": 9, "r": 0, "x": 0.11001, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 9, "to": 10, "r": 0.03181, "x": 0.0845, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 9, "to": 14, "r": 0.12711, "x": 0.27038, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 10, "to": 11, "r": 0.08205, "x": 0.19207, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 12, "to": 13, "r": 0.22092, "x": 0.19988, "b": 0, "rateA": 0, "ratio": 0},
+    {"from": 13, "to": 14, "r": 0.17093, "x": 0.34802, "b": 0, "rateA": 0, "ratio": 0}
+  ],
+  "source": "MATPOWER case14.m - https://github.com/MATPOWER/matpower, original from IEEE Common Data Format"
+}

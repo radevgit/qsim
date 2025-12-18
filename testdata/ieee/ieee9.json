@@ -1,0 +1,33 @@
+{
+  "name": "IEEE 9-bus",
+  "description": "9 bus, 3 generator case from Chow (1982), based on Schulz/Turner/Ewart EPRI Report (1974)",
+  "baseMVA": 100,
+  "buses": [
+    {"id": 1, "type": "slack", "pd": 0, "qd": 0, "gs": 0, "bs": 0, "vm": 1.0, "va": 0, "baseKV": 345},
+    {"id": 2, "type": "pv", "pd": 0, "qd": 0, "gs": 0, "bs": 0, "vm": 1.0, "va": 0, "baseKV": 345},
+    {"id": 3, "type": "pv", "pd": 0, "qd": 0, "gs": 0, "bs": 0, "vm": 1.0, "va": 0, "baseKV": 345},
+    {"id": 4, "type": "pq", "pd": 0, "qd": 0, "gs": 0, "bs": 0, "vm": 1.0, "va": 0, "baseKV": 345},
+    {"id": 5, "type": "pq", "pd": 90, "qd": 30, "gs": 0, "bs": 0, "vm": 1.0, "va": 0, "baseKV": 345},
+    {"id": 6, "type": "pq", "pd": 0, "qd": 0, "gs": 0, "bs": 0, "vm": 1.0, "va": 0, "baseKV": 345},
+    {"id": 7, "type": "pq", "pd": 100, "qd": 35, "gs": 0, "bs": 0, "vm": 1.0, "va": 0, "baseKV": 345},
+    {"id": 8, "type": "pq", "pd": 0, "qd": 0, "gs": 0, "bs": 0, "vm": 1.0, "va": 0, "baseKV": 345},
+    {"id": 9, "type": "pq", "pd": 125, "qd": 50, "gs": 0, "bs": 0, "vm": 1.0, "va": 0, "baseKV": 345}
+  ],
+  "generators": [
+    {"bus": 1, "pg": 71.3, "qg": 27.03, "qmax": 300, "qmin": -300, "vg": 1.04, "mbase": 100, "pmax": 250, "pmin": 10},
+    {"bus": 2, "pg": 163, "qg": 6.54, "qmax": 300, "qmin": -300, "vg": 1.025, "mbase": 100, "pmax": 300, "pmin": 10},
+    {"bus": 3, "pg": 85, "qg": -10.95, "qmax": 300, "qmin": -300, "vg": 1.025, "mbase": 100, "pmax": 270, "pmin": 10}
+  ],
+  "branches": [
+    {"from": 1, "to": 4, "r": 0, "x": 0.0576, "b": 0, "rateA": 250, "ratio": 0},
+    {"from": 4, "to": 5, "r": 0.017, "x": 0.092, "b": 0.158, "rateA": 250, "ratio": 0},
+    {"from": 5, "to": 6, "r": 0.039, "x": 0.17, "b": 0.358, "rateA": 150, "ratio": 0},
+    {"from": 3, "to": 6, "r": 0, "x": 0.0586, "b": 0, "rateA": 300, "ratio": 0},
+    {"from": 6, "to": 7, "r": 0.0119, "x": 0.1008, "b": 0.209, "rateA": 150, "ratio": 0},
+    {"from": 7, "to": 8, "r": 0.0085, "x": 0.072, "b": 0.149, "rateA": 250, "ratio": 0},
+    {"from": 8, "to": 2, "r": 0, "x": 0.0625, "b": 0, "rateA": 250, "ratio": 0},
+    {"from": 8, "to": 9, "r": 0.032, "x": 0.161, "b": 0.306, "rateA": 250, "ratio": 0},
+    {"from": 9, "to": 4, "r": 0.01, "x": 0.085, "b": 0.176, "rateA": 250, "ratio": 0}
+  ],
+  "source": "MATPOWER case9.m - https://github.com/MATPOWER/matpower"
+}
